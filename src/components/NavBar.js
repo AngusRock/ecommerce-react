@@ -1,8 +1,8 @@
 import './NavBar.css';
+import CartWidget from './CartWidget';
 
 function NavBar() {
-    return (
-        <>
+    return (        
         <nav className="navbar-style pb-4 bg-dark">
         <div className="navbar navbar-expand-lg navbar-dark navbar-bg navbar-dimensions">
           <a className="navbar-brand" href="index.html">Test Brand Sites</a>
@@ -17,11 +17,11 @@ function NavBar() {
               <li className="nav-item">
                 <a className="nav-link active" href="index.html">Login</a>
               </li>
+              <CartWidget />
             </ul>
           </div>
           </div>
-        </nav>
-        </>
+        </nav>        
     );
 }
 
