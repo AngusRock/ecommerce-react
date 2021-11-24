@@ -1,4 +1,3 @@
-import './ItemCount.css';
 import {useState} from 'react';
 
 function ItemCount(props){
@@ -17,21 +16,18 @@ function ItemCount(props){
     }
 
     return(
-        <div className="d-flex justify-content-center">
-            <div className="box products">
-                <h4>Bolsas de Café</h4>            
-                <div className="col-xs-2">
-                    <div className="price">Stock Disponible: {stock > 0 ? stock : <b>Sin Stock</b>}</div>
-                    <p className="inline mr">Cantidad:</p>
-                    <button className="btn-primary btn-sm" onClick={decrement}>-</button>
-                    <p className="inline mr ml">{count}</p>
-                    <button className="btn-primary btn-sm" onClick={increment}>+</button>
-                </div>
-                <div className="mt-3">
-                    <button type="button" className="btn btn-primary" onClick={onAdd}>Agregar al carrito</button>
-                </div>
-            </div>
+        <>          
+        <div className="col-xs-2">
+            <div className="price">Stock Disponible: {stock > 0 ? stock : <b>Sin Stock</b>}</div>
+            <p className="inline mr">Cantidad:</p>
+            <button className="btn-primary btn-sm" onClick={decrement}>-</button>
+            <p className="inline mr ml">{count}</p>
+            <button className="btn-primary btn-sm" onClick={increment}>+</button>
         </div>
+        <div className="mt-3">
+            <button type="button" className="btn btn-primary btn-sm" onClick={onAdd}>Agregar al carrito</button>
+        </div>
+        </>
     );
 }
 

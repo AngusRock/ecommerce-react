@@ -5,6 +5,11 @@
       transform: scale(1.03);
   }
 
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
 .box{
     padding:2rem;
     text-align: center;
@@ -12,7 +17,7 @@
     border-radius: .4rem;
     background-color: #fff;
     color: black;
-    width: 30%;
+    width: 80%;
     margin-top: 30px;
   
 }

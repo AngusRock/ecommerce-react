@@ -1,12 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Greetings from './components/ItemListContainer'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
     <>
     <NavBar />
-    <Greetings title="E-Commerce Site" greeting="¡Bienvenidos! Por el momento el sitio se encuentra en construcción"/>
+    <ItemListContainer title="E-Commerce Site" greeting="¡Bienvenidos! Por el momento el sitio se encuentra en construcción"/>
     </>
   );
 }
