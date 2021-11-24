@@ -9,6 +9,7 @@ export default function ItemList({items}){
         description={products.description}
         price={products.price}
         stock={products.stock}
+        pictureUrl={products.pictureUrl}
         />)
     )
 }

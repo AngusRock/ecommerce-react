@@ -1,10 +1,12 @@
+import coffeeIcon from '../assets/cafe.jpg';
+
 const products = [
     {
         id: 0,
         title: 'Cafe Arabica',
         description: 'Bolsa 1kg',
         price: 420,
-        pictureUrl: null,
+        pictureUrl: coffeeIcon,
         stock: 7
     },
     {
@@ -12,7 +14,7 @@ const products = [
         title: 'Cafe Robusta',
         description: 'Bolsa 1kg',
         price: 400,
-        pictureUrl: null,
+        pictureUrl: coffeeIcon,
         stock: 5
     },
     {
@@ -20,7 +22,7 @@ const products = [
         title: 'Cafe Arabica',
         description: 'Bolsa 3kg',
         price: 1020,
-        pictureUrl: null,
+        pictureUrl: coffeeIcon,
         stock: 4
     }
 ]
