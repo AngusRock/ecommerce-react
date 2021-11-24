@@ -5,6 +5,7 @@ export default function Item(item){
         <div className="d-flex justify-content-center">
         <div className="box products">
             <h4>{item.title}</h4>
+            <h6>{item.description}</h6>
             <img src={item.pictureUrl} alt="icono cafe" />
             <ItemCount initial="1" stock={item.stock} />
             <div className="mt-3">
