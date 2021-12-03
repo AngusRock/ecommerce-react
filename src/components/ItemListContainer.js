@@ -1,11 +1,13 @@
 import ItemList from './ItemList';
 import data from '../db/data';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import './ItemListContainer.css';
+import { useParams } from 'react-router';
 
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
+    const { catName } = useParams();
 
     function getData(timeOut){
         setLoading(true);        
@@ -20,14 +22,18 @@ const ItemListContainer = (props) => {
         });
     }
 
+    const filterCategory = useCallback((response) => {
+        return response.filter(item => item.category === catName.toLowerCase());
+    }, [catName]);
+    
     useEffect(() => {        
         getData(2000)
         .then(response => {
-            setLoading(false);            
-            setProducts(response);
+            setLoading(false);                        
+            setProducts(catName === undefined ? response : filterCategory(response));
         })
         .catch(error => console.log('ocurrio un error'));
-    }, []);
+    }, [catName, filterCategory]);
 
     return (
         <>        

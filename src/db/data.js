@@ -17,8 +17,9 @@ const products = [
         smallPictureUrl:cafeGranoSmall,
         stock: 7,
         description: 'Café en granos con un 0,8% y un 1,4% de cafeína, sutil, delicado y elegante con un gran equilibrio entre sabor y cuerpo.',
-        type: 'Grano',
-        country: 'Colombia'
+        type: 'grano',
+        country: 'Colombia',
+        category: 'cafes'
     },
     {
         id: 1,
@@ -29,8 +30,9 @@ const products = [
         smallPictureUrl:cafeBolsaSmall,
         stock: 5,
         description: 'Café en granos con un 4% de cafeína, mas fuerte en sabor y cuerpo.',
-        type: 'Grano',
-        country: 'Brasil'
+        type: 'grano',
+        country: 'Brasil',
+        category: 'cafes'
     },
     {
         id: 2,
@@ -41,8 +43,9 @@ const products = [
         smallPictureUrl:cafeBolsaSmall,
         stock: 4,
         description: 'Café en granos con un 0,8% y un 1,4% de cafeína, sutil, delicado y elegante con un gran equilibrio entre sabor y cuerpo.',
-        type: 'Grano',
-        country: 'Guatemala'
+        type: 'grano',
+        country: 'Guatemala',
+        category: 'cafes'
     },
     {
         id: 3,
@@ -53,8 +56,9 @@ const products = [
         smallPictureUrl:cafeCapsulaSmall,
         stock: 4,
         description: 'Café en capsulas con un 0,8% y un 1,4% de cafeína, sutil, delicado y elegante con un gran equilibrio entre sabor y cuerpo.',
-        type: 'Capsulas',
-        country: 'Colombia'
+        type: 'capsulas',
+        country: 'Colombia',
+        category: 'cafes'
     },
     {
         id: 4,
@@ -65,8 +69,9 @@ const products = [
         smallPictureUrl:cafeCapsulaSmall,
         stock: 15,
         description: 'Café en capsulas con un 4% de cafeína, mas fuerte en sabor y cuerpo.',
-        type: 'Capsulas',
-        country: 'Colombia'
+        type: 'capsulas',
+        country: 'Colombia',
+        category: 'cafes'
     },
     {
         id: 5,
@@ -77,8 +82,9 @@ const products = [
         smallPictureUrl:cafeCapsulaSmall,
         stock: 20,
         description: 'Café con un 0,8% y un 1,4% de cafeína, sutil, delicado y elegante con un gran equilibrio entre sabor y cuerpo.',
-        type: 'Capsulas',
-        country: 'Etiopia'
+        type: 'capsulas',
+        country: 'Etiopia',
+        category: 'cafes'
     },
     {
         id: 6,
@@ -89,9 +95,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 8,
         description: 'Cafetera para moler cafe en grano',
-        type: 'Cafetera',
-        country: 'Alemania'
-
+        type: 'cafetera',
+        country: 'Alemania',
+        category: 'maquinas'
     },
     {
         id: 7,
@@ -102,9 +108,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 4,
         description: 'Cafetera para moler cafe en grano',
-        type: 'Cafetera',
-        country: 'Alemania'
-
+        type: 'cafetera',
+        country: 'Alemania',
+        category: 'maquinas'
     },
     {
         id: 8,
@@ -115,9 +121,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 4,
         description: 'Cafetera para moler cafe en grano',
-        type: 'Cafetera',
-        country: 'EEUU'
-
+        type: 'cafetera',
+        country: 'EEUU',
+        category: 'maquinas'
     },
     {
         id: 9,
@@ -128,9 +134,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 6,
         description: 'Cafetera para moler cafe en grano con espumador',
-        type: 'Cafetera',
-        country: 'España'
-
+        type: 'cafetera',
+        country: 'España',
+        category: 'maquinas'
     },
     {
         id: 10,
@@ -141,9 +147,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 4,
         description: 'Cafetera para moler cafe en grano con espumador',
-        type: 'Cafetera',
-        country: 'Alemania'
-
+        type: 'cafetera',
+        country: 'Alemania',
+        category: 'maquinas'
     },
     {
         id: 11,
@@ -154,9 +160,9 @@ const products = [
         smallPictureUrl:maquinaCafeSmall,
         stock: 10,
         description: 'Cafetera para moler cafe en grano con espumador',
-        type: 'Cafetera',
-        country: 'Alemania'
-
+        type: 'cafetera',
+        country: 'Alemania',
+        category: 'maquinas'
     }
 ]
 

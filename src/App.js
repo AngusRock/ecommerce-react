@@ -11,6 +11,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
+        <Route path='/item/category/:catName' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
         <Route path='/item/:idItem' element={<ItemDetailContainer />} />
       </Routes>
       <Footer/>        
