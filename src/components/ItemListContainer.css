@@ -32,9 +32,10 @@
 }
 
 .mr {
-    margin-right: 10px;
+    margin-right: 18px;
 }
 
-.ml {
-    margin-left: 10px;
+.margin-quantity {
+    margin-right: 7px;
+    margin-left: 7px;
 }

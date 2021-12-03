@@ -1,17 +1,17 @@
-import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 
 export default function Item(item){
     return (
         <div className="d-flex justify-content-center">
         <div className="box products">
             <h4>{item.title}</h4>
-            <h6>{item.description} (${item.price})</h6>
-            <img src={item.pictureUrl} alt="icono cafe" />            
-            <ItemCount initial="1" stock={item.stock} />
-            <div className="mt-3">
-            <button type="button" className="btn btn-secondary btn-sm">Ver Detalle Producto</button>
-            </div>
+            <p style={{fontSize: '15px'}}>({item.type} - {item.country})</p>
+            <img src={item.smallPictureUrl} alt="icono cafe"/>
+            <Link to={'/item/'+item.id} style={{textDecoration: "none"}}>
+                <Button variant="contained" style={{textTransform: 'none'}} className="mt-3">Detalle Producto</Button>
+            </Link>
         </div>
     </div>
-    )    
+    )
 }

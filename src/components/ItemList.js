@@ -6,10 +6,13 @@ export default function ItemList({items}){
         <Item 
         key={products.id}
         title={products.title}
-        description={products.description}
+        type={products.type}
         price={products.price}
         stock={products.stock}
         pictureUrl={products.pictureUrl}
+        id={products.id}
+        country={products.country}
+        smallPictureUrl={products.smallPictureUrl}
         />)
     )
 }
