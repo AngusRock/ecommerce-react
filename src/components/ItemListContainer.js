@@ -7,7 +7,7 @@ import { useParams } from 'react-router';
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
-    const { catName } = useParams();
+    const { categoryId } = useParams();
 
     function getData(timeOut){
         setLoading(true);        
@@ -23,17 +23,17 @@ const ItemListContainer = (props) => {
     }
 
     const filterCategory = useCallback((response) => {
-        return response.filter(item => item.category === catName.toLowerCase());
-    }, [catName]);
+        return response.filter(item => item.category === categoryId.toLowerCase());
+    }, [categoryId]);
     
     useEffect(() => {        
         getData(2000)
         .then(response => {
             setLoading(false);                        
-            setProducts(catName === undefined ? response : filterCategory(response));
+            setProducts(categoryId === undefined ? response : filterCategory(response));
         })
         .catch(error => console.log('ocurrio un error'));
-    }, [catName, filterCategory]);
+    }, [categoryId, filterCategory]);
 
     return (
         <>        
