@@ -13,10 +13,10 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav" style={{marginLeft: '40%'}}>
               <li className="nav-item">
-              <Link to='/item/category/cafes' style={{textDecoration: "none"}}><span className="nav-link active">Cafés</span></Link>
+              <Link to='/category/cafes' style={{textDecoration: "none"}}><span className="nav-link active">Cafés</span></Link>
               </li>
               <li className="nav-item">
-              <Link to='/item/category/maquinas' style={{textDecoration: "none"}}><span className="nav-link active">Máquinas</span></Link>
+              <Link to='/category/maquinas' style={{textDecoration: "none"}}><span className="nav-link active">Máquinas</span></Link>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto">
