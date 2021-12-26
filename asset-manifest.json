@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/ecommerce-react/static/css/main.1f83c437.chunk.css",
+    "main.js": "/ecommerce-react/static/js/main.7a9070bc.chunk.js",
+    "main.js.map": "/ecommerce-react/static/js/main.7a9070bc.chunk.js.map",
+    "runtime-main.js": "/ecommerce-react/static/js/runtime-main.6d00f51f.js",
+    "runtime-main.js.map": "/ecommerce-react/static/js/runtime-main.6d00f51f.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/ecommerce-react/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.13d2fe4e.chunk.js": "/ecommerce-react/static/js/2.13d2fe4e.chunk.js",
+    "static/js/2.13d2fe4e.chunk.js.map": "/ecommerce-react/static/js/2.13d2fe4e.chunk.js.map",
+    "static/js/3.104224bd.chunk.js": "/ecommerce-react/static/js/3.104224bd.chunk.js",
+    "static/js/3.104224bd.chunk.js.map": "/ecommerce-react/static/js/3.104224bd.chunk.js.map",
+    "index.html": "/ecommerce-react/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/ecommerce-react/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.1f83c437.chunk.css.map": "/ecommerce-react/static/css/main.1f83c437.chunk.css.map",
+    "static/js/2.13d2fe4e.chunk.js.LICENSE.txt": "/ecommerce-react/static/js/2.13d2fe4e.chunk.js.LICENSE.txt",
+    "static/media/cafe_bolsa.07678750.png": "/ecommerce-react/static/media/cafe_bolsa.07678750.png",
+    "static/media/cafe_bolsa_small.7874d660.png": "/ecommerce-react/static/media/cafe_bolsa_small.7874d660.png",
+    "static/media/cafe_capsula.f3c64e3a.jpg": "/ecommerce-react/static/media/cafe_capsula.f3c64e3a.jpg",
+    "static/media/cafe_capsula_small.256e843f.png": "/ecommerce-react/static/media/cafe_capsula_small.256e843f.png",
+    "static/media/cafe_grano.78d908ed.png": "/ecommerce-react/static/media/cafe_grano.78d908ed.png",
+    "static/media/cafe_grano_small.50fc61c6.png": "/ecommerce-react/static/media/cafe_grano_small.50fc61c6.png",
+    "static/media/maquina_cafe.4170ae36.png": "/ecommerce-react/static/media/maquina_cafe.4170ae36.png",
+    "static/media/maquina_cafe_small.de6f144d.png": "/ecommerce-react/static/media/maquina_cafe_small.de6f144d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d00f51f.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.13d2fe4e.chunk.js",
+    "static/css/main.1f83c437.chunk.css",
+    "static/js/main.7a9070bc.chunk.js"
+  ]
+}
