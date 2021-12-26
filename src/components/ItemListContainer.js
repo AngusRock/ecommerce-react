@@ -27,7 +27,7 @@ const ItemListContainer = (props) => {
     }, [categoryId]);
     
     useEffect(() => {        
-        getData(2000)
+        getData(0)
         .then(response => {
             setLoading(false);                        
             setProducts(categoryId === undefined ? response : filterCategory(response));

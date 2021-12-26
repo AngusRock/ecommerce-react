@@ -22,7 +22,7 @@ export default function ItemDetailContainer(){
     }
 
     useEffect(() => {                
-        getData(2000)
+        getData(0)
         .then(response => {            
             setLoading(false);            
             setProduct(response.find(item => item.id === parseInt(idItem)));

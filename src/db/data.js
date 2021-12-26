@@ -50,7 +50,7 @@ const products = [
     {
         id: 3,
         title: 'Cafe Arabica',
-        package: '10 Capsulas',
+        package: 'Caja 10 Capsulas',
         price: 1020,
         pictureUrl: cafeCapsula,
         smallPictureUrl:cafeCapsulaSmall,
@@ -63,7 +63,7 @@ const products = [
     {
         id: 4,
         title: 'Cafe Robusta',
-        package: '10 Capsulas',
+        package: 'Caja 10 Capsulas',
         price: 800,
         pictureUrl: cafeCapsula,
         smallPictureUrl:cafeCapsulaSmall,
@@ -76,11 +76,11 @@ const products = [
     {
         id: 5,
         title: 'Cafe Arabica',
-        package: '20 Capsulas',
+        package: 'Caja 20 Capsulas',
         price: 1450,
         pictureUrl: cafeCapsula,
         smallPictureUrl:cafeCapsulaSmall,
-        stock: 20,
+        stock: 17,
         description: 'Café con un 0,8% y un 1,4% de cafeína, sutil, delicado y elegante con un gran equilibrio entre sabor y cuerpo.',
         type: 'capsulas',
         country: 'Etiopia',
@@ -89,7 +89,7 @@ const products = [
     {
         id: 6,
         title: 'Cafetera Blanca',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 22200,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
@@ -102,7 +102,7 @@ const products = [
     {
         id: 7,
         title: 'Cafetera Negra',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 22200,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
@@ -115,7 +115,7 @@ const products = [
     {
         id: 8,
         title: 'Cafetera Roja',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 22200,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
@@ -128,7 +128,7 @@ const products = [
     {
         id: 9,
         title: 'Cafetera Blanca con Espumador',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 24850,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
@@ -141,7 +141,7 @@ const products = [
     {
         id: 10,
         title: 'Cafetera Negra con Espumador',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 24850,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
@@ -154,7 +154,7 @@ const products = [
     {
         id: 11,
         title: 'Cafetera Roja con Espumador',
-        package: '1 Cafetera',
+        package: 'Cafetera',
         price: 24850,
         pictureUrl: maquinaCafe,
         smallPictureUrl:maquinaCafeSmall,
