@@ -1,20 +1,36 @@
 import ItemCount from './ItemCount';
-import { Button } from '@mui/material';
-import { useContext, useState } from 'react';
+import { Button, Snackbar } from '@mui/material';
+import { useContext, useState, forwardRef } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from './CartContext';
+import MuiAlert from '@mui/material/Alert';
+
+const Alert = forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export default function ItemDetail({ item }){
   const getCartContext = useContext(CartContext);
   const [itemCount, setItemCount] = useState(0);
-  const onAdd = (qty) => {
-    //alert('Has seleccionado: '+qty+' unidad(es)');
+  const [isToastOpen, setIsToastOpen] = useState(false);
+  const toastVerticalPos = 'top';
+  const toastHorizontalPos = 'right';
+  
+  const onAdd = (qty) => {    
     setItemCount(qty);
     getCartContext.addCartItem(item, qty);
+    setIsToastOpen(true);
   }
 
+  const handleToastClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setIsToastOpen(false);
+  };
+
     return (
-      <section className="mb-5 mt-5 d-flex justify-content-center">
+      <section className="mb-5 mt-5 d-flex justify-content-center">            
         <div className="row">
           <div className="col-md-6 mb-4 mb-md-0">
             <div id="mdb-lightbox-ui"></div>
@@ -60,6 +76,14 @@ export default function ItemDetail({ item }){
                 }
           </div>
         </div>
+       
+
+      <Snackbar className="mt-4" open={isToastOpen} autoHideDuration={1800} onClose={handleToastClose} anchorOrigin={{ vertical: toastVerticalPos, horizontal: toastHorizontalPos }} key={toastVerticalPos + toastHorizontalPos}>
+        <Alert onClose={handleToastClose} severity="success" sx={{ width: '100%' }}>
+        Has agregado {itemCount} unidad(es) al carrito!
+        </Alert>
+      </Snackbar>      
+   
       </section>
     )
 }
