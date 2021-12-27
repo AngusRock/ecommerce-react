@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
-          <Route path='/category/:categoryId' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
-          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/ecommerce-react' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
+          <Route path='/ecommerce-react/category/:categoryId' element={<ItemListContainer title="Coffee Site" greeting="¡Bienvenidos!"/>} />
+          <Route path='/ecommerce-react/item/:idItem' element={<ItemDetailContainer />} />
+          <Route path='/ecommerce-react/cart' element={<Cart />} />
         </Routes>
         <Footer/>        
       </BrowserRouter>

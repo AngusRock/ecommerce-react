@@ -19,7 +19,7 @@ export default function Cart(){
         <>
             <h4 className="d-flex justify-content-center mt-4">Carrito Vacio</h4>
             <div className="d-flex justify-content-center mt-4">
-                <Link to='/' style={{textDecoration: "none"}}>
+                <Link to='/ecommerce-react' style={{textDecoration: "none"}}>
                     <Button variant="contained" style={{textTransform: 'none'}}>Listar Productos</Button>
                 </Link>
             </div>
@@ -33,7 +33,7 @@ export default function Cart(){
                     <div className="product-details mr-2">
                         <div className="d-flex flex-row align-items-center">
                             <i className="fa fa-long-arrow-left"></i>
-                            <Link to='/' style={{textDecoration: "none"}}>
+                            <Link to='/ecommerce-react' style={{textDecoration: "none"}}>
                                 <span className="ml-2">Continuar Comprando</span>
                             </Link>
                         </div>

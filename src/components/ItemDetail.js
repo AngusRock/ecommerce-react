@@ -54,7 +54,7 @@ export default function ItemDetail({ item }){
             <hr />
                 {itemCount === 0
                 ? <ItemCount initial="0" stock={item.stock} onAdd={onAdd} />
-                : <Link to='/cart'> 
+                : <Link to='/ecommerce-react/cart'> 
                     <Button variant="contained" style={{textTransform: 'none'}}>Checkout</Button>
                   </Link>
                 }

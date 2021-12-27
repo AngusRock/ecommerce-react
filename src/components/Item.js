@@ -8,7 +8,7 @@ export default function Item(item){
                 <h4>{item.title}</h4>
                 <p style={{fontSize: '15px'}}>({item.type} - {item.country})</p>
                 <img src={item.smallPictureUrl} alt="icono cafe"/>
-                <Link to={'/item/'+item.id} style={{textDecoration: "none"}}>
+                <Link to={'/ecommerce-react/item/'+item.id} style={{textDecoration: "none"}}>
                     <Button variant="contained" style={{textTransform: 'none'}} className="mt-3">Detalle Producto</Button>
                 </Link>
             </div>
